@@ -41,28 +41,28 @@ python3 ./test.py
 ![Dependency of doc](.images/dependency_of_doc.png)
 
 
-## Built With
+## 使用的组件
 
 * TODO
 
-## Contributing
+## 如何贡献
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+请阅读 [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) , 然后提交 pull requests 给我们.
 
-## Versioning
+## 版本化控制
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the `tags` on this repository.
+我们使用 [SemVer](http://semver.org/) 做版本化的标准. 查看 `tags` 以了解所有的版本.
 
-## Authors
+## 作者
 
-* **Xiaoquan Kong** - *Initial work* - [howl-anderson](https://github.com/howl-anderson)
+* **孔晓泉** - *Initial work* - [howl-anderson](https://github.com/howl-anderson)
 
-See also the list of `contributors` who participated in this project.
+更多贡献者信息，请参考 `contributors`.
 
-## License
+## 版权
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+MIT License - 详见 [LICENSE.md](LICENSE.md)
 
-## Acknowledgments
+## 致谢
 
 * TODO
