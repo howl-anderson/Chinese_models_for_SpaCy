@@ -1,42 +1,42 @@
-[中文版本的 README](README.zh-Hans.md)
+[README written in English](README.md)
 ------------------------------
 
-# Chinese models for SpaCy
+# SpaCy 中文模型
 
-SpaCy (version > 2) models for Chinese language. Those models are rough and still work in prograss. But "Something is Better Than Nothing".
+为 SpaCy 提供的中文数据模型. 这些模型目前比较实现的比较粗糙并且还在开发状态. 但毕竟“有总比没有的好”。
 
-## Getting Started
+## 开始使用
 
-Models are released as binary file, users should know basic knowledge of using SpaCy version 2+.
+模型用二进制文件的形式进行分发, 用户应该具备基础的 SpaCy （version > 2) 的基础知识.
 
-### Prerequisites
+### 系统要求
 
-Python 3 (maybe python2, but currently not well tested)
+Python 3 (也许支持 python2, 但未经过良好测试)
 
-### Installing
+### 安装
 
-Download relased model from `releases`.
+从 `releases` 页面下载模型.
 
 ```
 wget -c XXX.tar.gz
 ```
 
-then install model
+然后安装模型
 
 ```
 pip install XXX.tar.gz
 ```
 
 
-## Running demo code
+## 运行 Demo 代码
 
-`test.py` contains demo codes. After install the model, user can execute:
+Demo 代码位于 `test.py`. 在安装好模型后，可以直接执行
 
 ```bash
 python3 ./test.py
 ```
 
-then, open web browser to `http://127.0.0.1:5000`, user will see image simllar to this:
+打开地址 `http://127.0.0.1:5000`, 将看到如下：
 
 ![Dependency of doc](.images/dependency_of_doc.png)
 
