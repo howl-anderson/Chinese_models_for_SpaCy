@@ -30,7 +30,7 @@ pip install zh_core_web_sm-2.0.1.tar.gz
 
 ## 运行 Demo 代码
 
-Demo 代码位于 `test.py`. 在安装好模型后，可以直接执行
+Demo 代码位于 `test.py`. 在安装好模型后，用户下载或者克隆本仓库的代码，然后可以直接执行
 
 ```bash
 python3 ./test.py
