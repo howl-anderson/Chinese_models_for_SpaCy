@@ -18,19 +18,19 @@ Python 3 (maybe python2, but currently not well tested)
 Download relased model from `releases`.
 
 ```
-wget -c XXX.tar.gz
+wget -c https://github.com/howl-anderson/Chinese_models_for_SpaCy/releases/download/v2.0.1/zh_core_web_sm-2.0.1.tar.gz
 ```
 
 then install model
 
 ```
-pip install XXX.tar.gz
+pip install zh_core_web_sm-2.0.1.tar.gz
 ```
 
 
 ## Running demo code
 
-`test.py` contains demo codes. After install the model, user can execute:
+`test.py` contains demo codes. After install the model, user can download or clone this repo then execute:
 
 ```bash
 python3 ./test.py
