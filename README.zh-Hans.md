@@ -40,6 +40,10 @@ python3 ./test.py
 
 ![Dependency of doc](.images/dependency_of_doc.png)
 
+## 如何从零构造这个模型
+
+见 [workflow](workflow.md)
+
 
 ## 使用的组件
 

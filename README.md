@@ -40,6 +40,9 @@ then, open web browser to `http://127.0.0.1:5000`, user will see image simllar t
 
 ![Dependency of doc](.images/dependency_of_doc.png)
 
+## How to re-produce model
+
+See [workflow](workflow.md)
 
 ## Built With
 
