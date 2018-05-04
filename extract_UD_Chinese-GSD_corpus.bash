@@ -1,3 +1,3 @@
 #!/bin/bash
 
-unzip ./corpus/UD_Chinese-GS.zip -d ./corpus
+unzip ./corpus/UD_Chinese-GSD.zip -d ./corpus

@@ -14,6 +14,15 @@
    * script: `merge_all_text_files.bash`
 
 ## compute brown cluster
+### brown cluster computing software
+   Official software is [brown-cluster](https://github.com/percyliang/brown-cluster).
+
+### install
+   * input: -
+   * output: ``
+   * script: `download_and_compile_brown_cluster.bash`
+
+### computing
    * input: `WORDS.txt`
    * output: `WORDS-c1000-p1.out/*`
    * script: `compute_brown_cluster.bash`
@@ -36,21 +45,21 @@
     * script: `download_UD_Chinese-GSD_corpus.bash`
 
 ### extracting
-    * input: `corpus/UD_Chinese-GS.zip`
-    * output: `corpus/UD_Chinese-GS`
+    * input: `corpus/UD_Chinese-GSd.zip`
+    * output: `corpus/UD_Chinese-GSd`
     * script: `extract_UD_Chinese-GSD_corpus.bash`
 
 ### convert to simplified Chinese
-    * input: `corpus/UD_Chinese-GS`
-    * output: `corpus/UD_Chinese-GS`
-    * script: ``
+    * input: `corpus/UD_Chinese-GSd/zh-ud-*.conllu`
+    * output: `corpus/UD_Chinese-GSd/zh-simplified-ud-*.conllu`
+    * script: `convert_UD_Chinese-GSd_corpus.bash`
 
 ## convert UD corpus format
-   * input: `../UD_Chinese-GSD/zh-simplified-ud-*.conllu`
-   * output: `zh-simplified-ud-*.conllu`
+   * input: `.corpus/UD_Chinese-GSD/zh-simplified-ud-*.conllu`
+   * output: `corpus/spacy/zh-simplified-ud-*.conllu`
    * script: `format_convertor.bash`
 
 ## train SpaCy model
-   * input: `zh_wiki_core  zh-simplified-ud-*.conllu`
+   * input: `zh_wiki_core  corpus/spacy/zh-simplified-ud-*.conllu`
    * output: `zh_model`
    * script: `train_model.bash`
