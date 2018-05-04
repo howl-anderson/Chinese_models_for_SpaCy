@@ -1,0 +1,2 @@
+https://github.com/howl-anderson/Chinese_models_for_SpaCy/releases/download/v2.0.1/zh_core_web_sm-2.0.1.tar.gz
+pandas
