@@ -5,6 +5,10 @@
 
 SpaCy (version > 2) models for Chinese language. Those models are rough and still work in prograss. But "Something is Better Than Nothing".
 
+## Online demo
+
+An online jupyter notebook / demo is provided at [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/howl-anderson/Chinese_models_for_SpaCy/master?filepath=notebooks%2Fdemo.ipynb).
+
 ## Getting Started
 
 Models are released as binary file, users should know basic knowledge of using SpaCy version 2+.

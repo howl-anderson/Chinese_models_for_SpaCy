@@ -5,6 +5,10 @@
 
 为 SpaCy 提供的中文数据模型. 这些模型目前比较实现的比较粗糙并且还在开发状态. 但毕竟“有总比没有的好”。
 
+## 在线演示
+
+基于 Jupyter notebook 的在线演示在 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/howl-anderson/Chinese_models_for_SpaCy/master?filepath=notebooks%2Fdemo.ipynb)。
+
 ## 开始使用
 
 模型用二进制文件的形式进行分发, 用户应该具备基础的 SpaCy （version > 2) 的基础知识.
