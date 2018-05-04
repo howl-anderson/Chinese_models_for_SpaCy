@@ -3,7 +3,7 @@
 
 # Chinese models for SpaCy
 
-SpaCy (version > 2) models for Chinese language. Those models are rough and still work in prograss. But "Something is Better Than Nothing".
+SpaCy (version > 2) models for Chinese language. Those models are rough and still **working in prograss**. But "Something is Better Than Nothing".
 
 ## Online demo
 
