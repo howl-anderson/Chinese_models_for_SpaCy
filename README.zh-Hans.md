@@ -11,9 +11,9 @@
 
 ### 特性
 
-部分 `Doc` 对象的属性信息:
+部分 `王小明在北京的清华大学读书` 这个 `Doc` 对象的属性信息:
 
-![.images/attributes_of_doc.png]()
+![attributes_of_doc](.images/attributes_of_doc.png)
 
 ## 开始使用
 

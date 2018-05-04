@@ -11,9 +11,9 @@ An online jupyter notebook / demo is provided at [![Binder](https://mybinder.org
 
 ### Features
 
-Partial attributes of a `Doc` object:
+Partial attributes of a `Doc` object for `王小明在北京的清华大学读书`:
 
-![.images/attributes_of_doc.png]()
+![attributes_of_doc](.images/attributes_of_doc.png)
 
 ## Getting Started
 
