@@ -40,19 +40,19 @@
 ## getting UD_Chinese-GSD corpus
 
 ### download
-    * input: -
-    * output: `corpus/UD_Chinese-GS.zip`
-    * script: `download_UD_Chinese-GSD_corpus.bash`
+   * input: -
+   * output: `corpus/UD_Chinese-GS.zip`
+   * script: `download_UD_Chinese-GSD_corpus.bash`
 
 ### extracting
-    * input: `corpus/UD_Chinese-GSd.zip`
-    * output: `corpus/UD_Chinese-GSd`
-    * script: `extract_UD_Chinese-GSD_corpus.bash`
+   * input: `corpus/UD_Chinese-GSd.zip`
+   * output: `corpus/UD_Chinese-GSd`
+   * script: `extract_UD_Chinese-GSD_corpus.bash`
 
 ### convert to simplified Chinese
-    * input: `corpus/UD_Chinese-GSd/zh-ud-*.conllu`
-    * output: `corpus/UD_Chinese-GSd/zh-simplified-ud-*.conllu`
-    * script: `convert_UD_Chinese-GSd_corpus.bash`
+   * input: `corpus/UD_Chinese-GSd/zh-ud-*.conllu`
+   * output: `corpus/UD_Chinese-GSd/zh-simplified-ud-*.conllu`
+   * script: `convert_UD_Chinese-GSd_corpus.bash`
 
 ## convert UD corpus format
    * input: `.corpus/UD_Chinese-GSD/zh-simplified-ud-*.conllu`
