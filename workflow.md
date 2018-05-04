@@ -1,9 +1,9 @@
-# SpaCy Chinese model trainning workflow
+# SpaCy Chinese model training workflow
 
-## get preprocessed Chinese wikipedia corpus
+## get preprocessed Chinese Wikipedia corpus
    see project [chinese-wikipedia-corpus-creator](https://github.com/howl-anderson/chinese-wikipedia-corpus-creator) for more details.
 
-## computting word frequence
+## computing word frequency
    * input: `token_cleaned_plain_files/*`
    * output: `WORDS_FREQ.txt`
    * script: `compute_words_freq.bash`
@@ -23,7 +23,7 @@
    * output: `WORDS_VECS.txt`
    * script: `compute_plain_word_vec.bash`
 
-## initial Spacy model
+## initial SpaCy model
    * input: `./WORDS-c1000-p1.out/paths  WORDS_VECS.txt  WORDS_FREQ.txt`
    * output: `zh_wiki_core/**/*`
    * script: `create_init_model.bash`
@@ -33,7 +33,7 @@
    * output: `zh-simplified-ud-*.conllu`
    * script: `format_convertor.bash`
 
-## train Spacy model
+## train SpaCy model
    * input: `zh_wiki_core  zh-simplified-ud-*.conllu`
    * output: `zh_model`
    * script: `train_model.bash`
