@@ -9,6 +9,12 @@ SpaCy (version > 2) models for Chinese language. Those models are rough and stil
 
 An online jupyter notebook / demo is provided at [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/howl-anderson/Chinese_models_for_SpaCy/master?filepath=notebooks%2Fdemo.ipynb).
 
+### Features
+
+Partial attributes of a `Doc` object:
+
+![.images/attributes_of_doc.png]()
+
 ## Getting Started
 
 Models are released as binary file, users should know basic knowledge of using SpaCy version 2+.

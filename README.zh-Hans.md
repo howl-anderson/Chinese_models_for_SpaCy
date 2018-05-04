@@ -9,6 +9,12 @@
 
 基于 Jupyter notebook 的在线演示在 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/howl-anderson/Chinese_models_for_SpaCy/master?filepath=notebooks%2Fdemo.ipynb)。
 
+### 特性
+
+部分 `Doc` 对象的属性信息:
+
+![.images/attributes_of_doc.png]()
+
 ## 开始使用
 
 模型用二进制文件的形式进行分发, 用户应该具备基础的 SpaCy （version > 2) 的基础知识.
