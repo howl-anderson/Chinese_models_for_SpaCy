@@ -69,7 +69,7 @@ python3 ./test.py
 
 ## 作者
 
-* **孔晓泉** - *Initial work* - [howl-anderson](https://github.com/howl-anderson)
+* **Xiaoquan Kong** - *Initial work* - [howl-anderson](https://github.com/howl-anderson)
 
 更多贡献者信息，请参考 `contributors`.
 
