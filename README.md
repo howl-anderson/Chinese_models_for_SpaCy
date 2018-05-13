@@ -1,81 +1,82 @@
-[中文版本的 README](README.zh-Hans.md)
+[README written in English](README.en-US.md)
 ------------------------------
 
-# Chinese models for SpaCy
+# SpaCy 中文模型
 
-SpaCy (version > 2) models for Chinese language. Those models are rough and still **working in prograss**. But "Something is Better Than Nothing".
+为 SpaCy 提供的中文数据模型. 这些模型目前比较实现的比较粗糙并且还在 **开发状态**. 但毕竟“有总比没有的好”。
 
-## Online demo
+## 在线演示
 
-An online jupyter notebook / demo is provided at [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/howl-anderson/Chinese_models_for_SpaCy/master?filepath=notebooks%2Fdemo.ipynb).
+基于 Jupyter notebook 的在线演示在 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/howl-anderson/Chinese_models_for_SpaCy/master?filepath=notebooks%2Fdemo.ipynb)。
 
-### Features
+### 特性
 
-Partial attributes of a `Doc` object for `王小明在北京的清华大学读书`:
+部分 `王小明在北京的清华大学读书` 这个 `Doc` 对象的属性信息:
 
 ![attributes_of_doc](.images/attributes_of_doc.png)
 
-## Getting Started
+## 开始使用
 
-Models are released as binary file, users should know basic knowledge of using SpaCy version 2+.
+模型用二进制文件的形式进行分发, 用户应该具备基础的 SpaCy （version > 2) 的基础知识.
 
-### Prerequisites
+### 系统要求
 
-Python 3 (maybe python2, but currently not well tested)
+Python 3 (也许支持 python2, 但未经过良好测试)
 
-### Installing
+### 安装
 
-Download relased model from `releases`.
+从 `releases` 页面下载模型.
 
 ```
 wget -c https://github.com/howl-anderson/Chinese_models_for_SpaCy/releases/download/v2.0.1/zh_core_web_sm-2.0.1.tar.gz
 ```
 
-then install model
+然后安装模型
 
 ```
 pip install zh_core_web_sm-2.0.1.tar.gz
 ```
 
 
-## Running demo code
+## 运行 Demo 代码
 
-`test.py` contains demo codes. After install the model, user can download or clone this repo then execute:
+Demo 代码位于 `test.py`. 在安装好模型后，用户下载或者克隆本仓库的代码，然后可以直接执行
 
 ```bash
 python3 ./test.py
 ```
 
-then, open web browser to `http://127.0.0.1:5000`, user will see image simllar to this:
+打开地址 `http://127.0.0.1:5000`, 将看到如下：
 
 ![Dependency of doc](.images/dependency_of_doc.png)
 
-## How to re-produce model
+## 如何从零构造这个模型
 
-See [workflow](workflow.md)
+见 [workflow](workflow.md)
 
-## Built With
+
+## 使用的组件
 
 * TODO
 
-## Contributing
+## 如何贡献
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+请阅读 [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) , 然后提交 pull requests 给我们.
 
-## Versioning
+## 版本化控制
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the `tags` on this repository.
+我们使用 [SemVer](http://semver.org/) 做版本化的标准. 查看 `tags` 以了解所有的版本.
 
-## Authors
+## 作者
 
-* **Xiaoquan Kong** - *Initial work* - [howl-anderson](https://github.com/howl-anderson)
+* **孔晓泉** - *Initial work* - [howl-anderson](https://github.com/howl-anderson)
 
-See also the list of `contributors` who participated in this project.
+更多贡献者信息，请参考 `contributors`.
 
-## License
+## 版权
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+MIT License - 详见 [LICENSE.md](LICENSE.md)
 
-## Acknowledgments
+## 致谢
 
 * TODO
