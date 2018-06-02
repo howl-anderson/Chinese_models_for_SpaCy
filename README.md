@@ -54,6 +54,14 @@ python3 ./test.py
 
 见 [workflow](workflow.md)
 
+## TODO list
+
+* 属性 `pos_` 不正确. 这个和 SpaCy 中中文语言 Class 相关。
+* 属性 `shape_` and `is_alpha` 似乎对中文并无意义, 但需要权威信息确认一下.
+* 属性 `is_stop` 不正确. 这个和 SpaCy 中中文语言 Class 相关。
+* 属性 `vector` 似乎没有训练的很好。
+* 属性 `is_oov` 完全错误. 第一优先级修复。
+* NER 模型，因为缺少 LDC 语料库，目前不可用. 正在解决中。
 
 ## 使用的组件
 
