@@ -1,0 +1,3 @@
+[submodule "spacy-dev-resources"]
+	path = spacy-dev-resources
+	url = git@github.com:howl-anderson/spacy-dev-resources.git
