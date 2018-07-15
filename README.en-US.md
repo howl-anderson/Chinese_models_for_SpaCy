@@ -62,6 +62,7 @@ See [workflow](workflow.md)
 * Attribute `vector` seems not well trained
 * Attribute `is_oov` is totally incorrect. First priority.
 * NER model is not available <s>due to lacking of LDC corpus.</s> I am working on it.
+* Release all the intermediate material to help user build own model
 
 ## Built With
 
