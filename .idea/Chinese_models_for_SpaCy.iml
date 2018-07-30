@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/package_templete/zh_core_web_sm-2.0.2" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/POS_depedency_model" />
+      <excludeFolder url="file://$MODULE_DIR$/corpus" />
+      <excludeFolder url="file://$MODULE_DIR$/package_templete" />
+      <excludeFolder url="file://$MODULE_DIR$/spacy-dev-resources" />
+      <excludeFolder url="file://$MODULE_DIR$/token_cleaned_plain_files" />
+      <excludeFolder url="file://$MODULE_DIR$/zh_wiki_core" />
+      <excludeFolder url="file://$MODULE_DIR$/zh_wiki_core_sm" />
+    </content>
+    <content url="file://$MODULE_DIR$/../spaCy" />
+    <orderEntry type="jdk" jdkName="Python 3.6 (Chinese_models_for_SpaCy)" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="TestRunnerService">
+    <option name="projectConfiguration" value="py.test" />
+    <option name="PROJECT_TEST_RUNNER" value="py.test" />
+  </component>
+</module>

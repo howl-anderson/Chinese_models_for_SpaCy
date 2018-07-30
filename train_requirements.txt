@@ -1,0 +1,1 @@
+-r ./spacy-dev-resources/requirements.txt

@@ -225,3 +225,16 @@ fabric.properties
 
 # Editor-based Rest Client
 .idea/httpRequests
+
+corpus/*
+
+zh_wiki_core_sm/*
+zh_wiki_core/*
+zh_model/
+
+WORDS.*
+WORDS_*
+WORDS-*/
+package_templete/
+third-part/
+

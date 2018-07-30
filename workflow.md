@@ -52,14 +52,29 @@
 ### convert to simplified Chinese
    * input: `corpus/UD_Chinese-GSd/zh-ud-*.conllu`
    * output: `corpus/UD_Chinese-GSd/zh-simplified-ud-*.conllu`
-   * script: `convert_UD_Chinese-GSd_corpus.bash`
+   * script: `convert_UD_Chinese-GSD_corpus.bash`
 
 ## convert UD corpus format
    * input: `.corpus/UD_Chinese-GSD/zh-simplified-ud-*.conllu`
    * output: `corpus/spacy/zh-simplified-ud-*.conllu`
    * script: `format_convertor.bash`
 
-## train SpaCy model
-   * input: `zh_wiki_core  corpus/spacy/zh-simplified-ud-*.conllu`
-   * output: `zh_model`
+## init spacy model with word vector & word cluster & word frquence
+   * input: `WORDS_FREQ.txt`, `WORDS-c1000-p1.out/paths`, `WORDS_VECS.txt`
+   * output: `zh_model/*`
+   * script: `init_model.bash`
+
+## train SpaCy model for POS and dependency parser
+   * input: `zh_model  corpus/spacy/zh-simplified-ud-*.conllu`
+   * output: `dependency_model`
    * script: `train_model.bash`
+
+## translate onotNote 5 to spacy json file
+   * input: `TODO` 
+   * output: `TODO`
+   * script: `onto_to_spacy_json.bash`
+
+## train SpaCy model for NER parser
+   * input: `zh_model china_ner_train.json china_ner_eval.json`
+   * output: `ner_model`
+   * script: `train_ner.bash`
