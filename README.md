@@ -13,125 +13,7 @@
 
 部分 `王小明在北京的清华大学读书` 这个 `Doc` 对象的属性信息:
 
-<div>
-    <style scoped="">
-        .dataframe tbody tr th:only-of-type {
-            vertical-align: middle;
-        }
-
-        .dataframe tbody tr th {
-            vertical-align: top;
-        }
-
-        .dataframe thead th {
-            text-align: right;
-        }
-    </style>
-    <table border="1" class="dataframe">
-        <thead>
-        <tr style="text-align: right;">
-            <th></th>
-            <th>text</th>
-            <th>lemma_</th>
-            <th>pos_</th>
-            <th>tag_</th>
-            <th>dep_</th>
-            <th>shape_</th>
-            <th>is_alpha</th>
-            <th>is_stop</th>
-            <th>has_vector</th>
-            <th>vector_norm</th>
-            <th>is_oov</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th>0</th>
-            <td>王小明</td>
-            <td>王小明</td>
-            <td>X</td>
-            <td>NNP</td>
-            <td>nsubj</td>
-            <td>xxx</td>
-            <td>True</td>
-            <td>False</td>
-            <td>True</td>
-            <td>0.392991</td>
-            <td>True</td>
-        </tr>
-        <tr>
-            <th>1</th>
-            <td>在</td>
-            <td>在</td>
-            <td>X</td>
-            <td>VV</td>
-            <td>acl</td>
-            <td>x</td>
-            <td>True</td>
-            <td>False</td>
-            <td>True</td>
-            <td>7.318524</td>
-            <td>False</td>
-        </tr>
-        <tr>
-            <th>2</th>
-            <td>北京</td>
-            <td>北京</td>
-            <td>X</td>
-            <td>NNP</td>
-            <td>det</td>
-            <td>xx</td>
-            <td>True</td>
-            <td>False</td>
-            <td>True</td>
-            <td>10.940736</td>
-            <td>False</td>
-        </tr>
-        <tr>
-            <th>3</th>
-            <td>的</td>
-            <td>的</td>
-            <td>X</td>
-            <td>DEC</td>
-            <td>case:dec</td>
-            <td>x</td>
-            <td>True</td>
-            <td>False</td>
-            <td>True</td>
-            <td>6.201293</td>
-            <td>False</td>
-        </tr>
-        <tr>
-            <th>4</th>
-            <td>清华大学</td>
-            <td>清华大学</td>
-            <td>X</td>
-            <td>NNP</td>
-            <td>obj</td>
-            <td>xxxx</td>
-            <td>True</td>
-            <td>False</td>
-            <td>True</td>
-            <td>12.044737</td>
-            <td>False</td>
-        </tr>
-        <tr>
-            <th>5</th>
-            <td>读书</td>
-            <td>读书</td>
-            <td>X</td>
-            <td>VV</td>
-            <td>ROOT</td>
-            <td>xx</td>
-            <td>True</td>
-            <td>False</td>
-            <td>True</td>
-            <td>11.602811</td>
-            <td>False</td>
-        </tr>
-        </tbody>
-    </table>
-</div>
+![attributes_of_doc](.images/attributes_of_doc.png)
 
 ## 开始使用
 
@@ -166,7 +48,7 @@ python3 ./test.py
 
 打开地址 `http://127.0.0.1:5000`, 将看到如下：
 
-![Dependency of doc](.images/dependency_of_doc.svg)
+![Dependency of doc](.images/dependency_of_doc.png)
 
 ## 如何从零构造这个模型
 
