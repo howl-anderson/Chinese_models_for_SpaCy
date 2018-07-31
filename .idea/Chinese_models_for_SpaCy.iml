@@ -11,7 +11,6 @@
       <excludeFolder url="file://$MODULE_DIR$/zh_wiki_core" />
       <excludeFolder url="file://$MODULE_DIR$/zh_wiki_core_sm" />
     </content>
-    <content url="file://$MODULE_DIR$/../spaCy" />
     <orderEntry type="jdk" jdkName="Python 3.6 (Chinese_models_for_SpaCy)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
