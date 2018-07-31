@@ -60,6 +60,7 @@ See [workflow](workflow.md)
 * Attribute `shape_` and `is_alpha` seems meaningless for Chinese, need make sure of it.
 * Attribute `is_stop` is not working correctly. This related to Language class in SpaCy.
 * Attribute `vector` seems not well trained
+* <s>Attribute `is_oov` is totally incorrect. First priority.</s>
 * NER model is not available <s>due to lacking of LDC corpus.</s> I am working on it.
 * Release all the intermediate material to help user build own model
 
