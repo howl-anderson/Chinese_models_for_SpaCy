@@ -28,13 +28,13 @@ Python 3 (maybe python2, but currently not well tested)
 Download relased model from `releases`.
 
 ```
-wget -c https://github.com/howl-anderson/Chinese_models_for_SpaCy/releases/download/v2.0.1/zh_core_web_sm-2.0.1.tar.gz
+wget -c https://github.com/howl-anderson/Chinese_models_for_SpaCy/releases/download/v2.0.2/zh_core_web_sm-2.0.2.tar.gz
 ```
 
 then install model
 
 ```
-pip install zh_core_web_sm-2.0.1.tar.gz
+pip install zh_core_web_sm-2.0.2.tar.gz
 ```
 
 
@@ -60,7 +60,6 @@ See [workflow](workflow.md)
 * Attribute `shape_` and `is_alpha` seems meaningless for Chinese, need make sure of it.
 * Attribute `is_stop` is not working correctly. This related to Language class in SpaCy.
 * Attribute `vector` seems not well trained
-* Attribute `is_oov` is totally incorrect. First priority.
 * NER model is not available <s>due to lacking of LDC corpus.</s> I am working on it.
 * Release all the intermediate material to help user build own model
 

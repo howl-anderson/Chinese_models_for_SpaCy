@@ -28,13 +28,13 @@ Python 3 (也许支持 python2, 但未经过良好测试)
 从 `releases` 页面下载模型.
 
 ```
-wget -c https://github.com/howl-anderson/Chinese_models_for_SpaCy/releases/download/v2.0.1/zh_core_web_sm-2.0.1.tar.gz
+wget -c https://github.com/howl-anderson/Chinese_models_for_SpaCy/releases/download/v2.0.2/zh_core_web_sm-2.0.2.tar.gz
 ```
 
 然后安装模型
 
 ```
-pip install zh_core_web_sm-2.0.1.tar.gz
+pip install zh_core_web_sm-2.0.2.tar.gz
 ```
 
 
@@ -60,7 +60,6 @@ python3 ./test.py
 * 属性 `shape_` and `is_alpha` 似乎对中文并无意义, 但需要权威信息确认一下.
 * 属性 `is_stop` 不正确. 这个和 SpaCy 中中文语言 Class 相关。
 * 属性 `vector` 似乎没有训练的很好。
-* 属性 `is_oov` 完全错误. 第一优先级修复。
 * NER 模型，<s>因为缺少 LDC 语料库，目前不可用. 正在解决中</s> 正在训练中。
 * 将训练中所用的中间结果 release 出来, 方便用户自行定制模型
 
