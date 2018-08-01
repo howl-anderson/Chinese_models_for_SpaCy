@@ -15,6 +15,11 @@ Partial attributes of a `Doc` object for `王小明在北京的清华大学读�
 
 ![attributes_of_doc](.images/attributes_of_doc.png)
 
+### NER (**New!**)
+NER of a `Doc` object for `王小明在北京的清华大学读书`:
+
+![attributes_of_doc](.images/ner_of_doc.png)
+
 ## Getting Started
 
 Models are released as binary file, users should know basic knowledge of using SpaCy version 2+.
@@ -28,7 +33,7 @@ Python 3 (maybe python2, but currently not well tested)
 Download relased model from `releases`.
 
 ```
-wget -c https://github.com/howl-anderson/Chinese_models_for_SpaCy/releases/download/v2.0.2/zh_core_web_sm-2.0.2.tar.gz
+wget -c https://github.com/howl-anderson/Chinese_models_for_SpaCy/releases/download/v2.0.3/zh_core_web_sm-2.0.3.tar.gz
 ```
 
 then install model
@@ -61,7 +66,7 @@ See [workflow](workflow.md)
 * Attribute `is_stop` is not working correctly. This related to Language class in SpaCy.
 * Attribute `vector` seems not well trained
 * <s>Attribute `is_oov` is totally incorrect. First priority.</s>
-* NER model is not available <s>due to lacking of LDC corpus.</s> I am working on it.
+* <s>NER model is not available due to lacking of LDC corpus. I am working on it.</s>
 * Release all the intermediate material to help user build own model
 
 ## Built With

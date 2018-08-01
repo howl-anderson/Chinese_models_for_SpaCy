@@ -10,10 +10,14 @@
 基于 Jupyter notebook 的在线演示在 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/howl-anderson/Chinese_models_for_SpaCy/master?filepath=notebooks%2Fdemo.ipynb)。
 
 ### 特性
-
 部分 `王小明在北京的清华大学读书` 这个 `Doc` 对象的属性信息:
 
 ![attributes_of_doc](.images/attributes_of_doc.png)
+
+### NER (**New!**)
+部分 `王小明在北京的清华大学读书` 这个 `Doc` 对象的 NER 信息:
+
+![attributes_of_doc](.images/ner_of_doc.png)
 
 ## 开始使用
 
@@ -28,7 +32,7 @@ Python 3 (也许支持 python2, 但未经过良好测试)
 从 `releases` 页面下载模型.
 
 ```
-wget -c https://github.com/howl-anderson/Chinese_models_for_SpaCy/releases/download/v2.0.2/zh_core_web_sm-2.0.2.tar.gz
+wget -c https://github.com/howl-anderson/Chinese_models_for_SpaCy/releases/download/v2.0.3/zh_core_web_sm-2.0.3.tar.gz
 ```
 
 然后安装模型
@@ -61,7 +65,7 @@ python3 ./test.py
 * 属性 `is_stop` 不正确. 这个和 SpaCy 中中文语言 Class 相关。
 * 属性 `vector` 似乎没有训练的很好。
 * <s>属性 `is_oov` 完全错误. 第一优先级修复。</s>
-* NER 模型，<s>因为缺少 LDC 语料库，目前不可用. 正在解决中</s> 正在训练中。
+* <s>NER 模型，因为缺少 LDC 语料库，目前不可用. 正在解决中正在训练中。</s> 
 * 将训练中所用的中间结果 release 出来, 方便用户自行定制模型
 
 ## 使用的组件
