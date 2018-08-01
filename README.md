@@ -13,7 +13,14 @@
 
 部分 `王小明在北京的清华大学读书` 这个 `Doc` 对象的属性信息:
 
-![attributes_of_doc](.images/attributes_of_doc.png)
+|    | text     | lemma_   | pos_   | tag_   | dep_     | shape_   | is_alpha   | is_stop   | has_vector   |   vector_norm | is_oov   |
+|---:|:---------|:---------|:-------|:-------|:---------|:---------|:-----------|:----------|:-------------|--------------:|:---------|
+|  0 | 王小明   | 王小明   | X      | NNP    | nsubj    | xxx      | True       | False     | True         |      0.392991 | True     |
+|  1 | 在       | 在       | X      | VV     | acl      | x        | True       | False     | True         |      7.31852  | False    |
+|  2 | 北京     | 北京     | X      | NNP    | det      | xx       | True       | False     | True         |     10.9407   | False    |
+|  3 | 的       | 的       | X      | DEC    | case:dec | x        | True       | False     | True         |      6.20129  | False    |
+|  4 | 清华大学 | 清华大学 | X      | NNP    | obj      | xxxx     | True       | False     | True         |     12.0447   | False    |
+|  5 | 读书     | 读书     | X      | VV     | ROOT     | xx       | True       | False     | True         |     11.6028   | False    |
 
 ## 开始使用
 
