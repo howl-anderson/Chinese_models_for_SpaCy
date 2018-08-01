@@ -39,7 +39,7 @@ wget -c https://github.com/howl-anderson/Chinese_models_for_SpaCy/releases/downl
 then install model
 
 ```
-pip install zh_core_web_sm-2.0.2.tar.gz
+pip install zh_core_web_sm-2.0.3.tar.gz
 ```
 
 
