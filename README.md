@@ -17,7 +17,7 @@
 ### NER (**New!**)
 部分 `王小明在北京的清华大学读书` 这个 `Doc` 对象的 NER 信息:
 
-![attributes_of_doc](.images/ner_of_doc.png)
+![ner_of_doc](.images/ner_of_doc.png)
 
 ## 开始使用
 
