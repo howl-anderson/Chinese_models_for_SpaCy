@@ -5,7 +5,7 @@ import re
 from spacy.gold import biluo_tags_from_offsets
 import spacy
 
-nlp = spacy.blank("zh")
+nlp = spacy.blank("xx")
 from tqdm import tqdm
 import random
 
@@ -34,7 +34,8 @@ def split_doc(text):
 
 
 def clean_ent(ent):
-    tag = re.findall('TYPE="(.+?)">', ent)[0]
+    dirty_tag = re.findall('TYPE="(.+?)">', ent)[0]
+    tag = dirty_tag.split(" ")[0]
     text = re.findall('>(.+)', ent)[0]
     text = re.sub("\$", "\$", text)
     return (text, tag)

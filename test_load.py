@@ -4,7 +4,7 @@ from spacy import displacy
 
 import spacy
 
-nlp = spacy.load('package_templete/zh_core_web_sm-2.0.2/zh_core_web_sm/zh_core_web_sm-2.0.2')
+nlp = spacy.load('package_templete/zh_core_web_sm-2.0.3/zh_core_web_sm/zh_core_web_sm-2.0.3')
 
 
 def main():
@@ -12,9 +12,10 @@ def main():
     for token in doc:
         print(token.text, token.lemma_, token.pos_, token.tag_, token.dep_,
               token.shape_, token.is_alpha, token.is_stop, token.has_vector,
+              token.ent_iob_, token.ent_type_,
               token.vector_norm, token.is_oov)
 
-    displacy.serve(doc)
+    # displacy.serve(doc)
 
 
 if __name__ == "__main__":
