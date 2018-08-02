@@ -34,8 +34,7 @@ def split_doc(text):
 
 
 def clean_ent(ent):
-    dirty_tag = re.findall('TYPE="(.+?)">', ent)[0]
-    tag = dirty_tag.split(" ")[0]
+    tag = re.findall('TYPE="(.+?)"', ent)[0]
     text = re.findall('>(.+)', ent)[0]
     text = re.sub("\$", "\$", text)
     return (text, tag)
