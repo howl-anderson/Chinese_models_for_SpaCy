@@ -1,3 +1,4 @@
+plac
 spacy
 pandas
 jieba

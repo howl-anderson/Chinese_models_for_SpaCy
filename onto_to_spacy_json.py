@@ -48,17 +48,23 @@ def raw_text(text):
 
 
 def ent_position(ents, text):
+    search_point = 0
     spacy_ents = []
     for ent in ents:
-        ma = re.search(ent[0], text)
-        ent_tup = (ma.start(), ma.end(), ent[1])
+        remain_text = text[search_point:]
+        ma = re.search(ent[0], remain_text)
+        ent_tup = (ma.start() + search_point, ma.end() + search_point, ent[1])
         spacy_ents.append(ent_tup)
+
+        # update search point to prevent same word in different entity,
+        # it will cause bug which hard to debug
+        search_point = search_point + ma.end()
     return spacy_ents
 
 
 def text_to_spacy(markup):
-    ents = re.findall("<ENAMEX(.+?)</ENAMEX>", markup)
-    ents = [clean_ent(ent) for ent in ents]
+    raw_ents = re.findall("<ENAMEX(.+?)</ENAMEX>", markup)
+    ents = [clean_ent(raw_ent) for raw_ent in raw_ents]
     text = raw_text(markup)
     spacy_ents = ent_position(ents, text)
     final = (text, {"entities": spacy_ents})
