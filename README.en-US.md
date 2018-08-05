@@ -33,13 +33,13 @@ Python 3 (maybe python2, but currently not well tested)
 Download relased model from `releases`.
 
 ```
-wget -c https://github.com/howl-anderson/Chinese_models_for_SpaCy/releases/download/v2.0.3/zh_core_web_sm-2.0.3.tar.gz
+wget -c https://github.com/howl-anderson/Chinese_models_for_SpaCy/releases/download/v2.0.4/zh_core_web_sm-2.0.4.tar.gz
 ```
 
 then install model
 
 ```
-pip install zh_core_web_sm-2.0.3.tar.gz
+pip install zh_core_web_sm-2.0.4.tar.gz
 ```
 
 

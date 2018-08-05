@@ -32,13 +32,13 @@ Python 3 (也许支持 python2, 但未经过良好测试)
 从 `releases` 页面下载模型.
 
 ```
-wget -c https://github.com/howl-anderson/Chinese_models_for_SpaCy/releases/download/v2.0.3/zh_core_web_sm-2.0.3.tar.gz
+wget -c https://github.com/howl-anderson/Chinese_models_for_SpaCy/releases/download/v2.0.4/zh_core_web_sm-2.0.4.tar.gz
 ```
 
 然后安装模型
 
 ```
-pip install zh_core_web_sm-2.0.3.tar.gz
+pip install zh_core_web_sm-2.0.4.tar.gz
 ```
 
 
