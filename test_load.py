@@ -4,7 +4,7 @@ from spacy import displacy
 
 import spacy
 
-nlp = spacy.load('package_templete/zh_core_web_sm-2.0.3/zh_core_web_sm/zh_core_web_sm-2.0.3')
+nlp = spacy.load('package_templete/zh_core_web_sm-2.0.4/zh_core_web_sm/zh_core_web_sm-2.0.4')
 
 
 def main():
