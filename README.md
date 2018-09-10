@@ -29,22 +29,21 @@ Python 3 (也许支持 python2, 但未经过良好测试)
 
 ### 安装
 
-从 `releases` 页面下载模型.
+#### 下载模型
+从 [releases](releases) 页面下载模型 (New! 为中国地区的用户提供了加速下载的链接)。假设所下载的模型名为 `zh_core_web_sm-2.x.x.tar.gz`。
+
+#### 安装模型
 
 ```
-wget -c https://github.com/howl-anderson/Chinese_models_for_SpaCy/releases/download/v2.0.4/zh_core_web_sm-2.0.4.tar.gz
-```
-
-然后安装模型
-
-```
-pip install zh_core_web_sm-2.0.4.tar.gz
+pip install zh_core_web_sm-2.x.x.tar.gz
 ```
 
 为了方便后续在 Rasa NLU 等框架中使用，需要再为这个模型建立一个链接，by 执行以下命令：
+
 ```bash
-Spacy link zh_core_web_sm zh
+spacy link zh_core_web_sm zh
 ```
+
 运行完成后就可以使用 zh 这个别名来访问这个模型了。
 
 ## 运行 Demo 代码
