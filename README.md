@@ -30,7 +30,7 @@ Python 3 (也许支持 python2, 但未经过良好测试)
 ### 安装
 
 #### 下载模型
-从 [releases](releases) 页面下载模型 (New! 为中国地区的用户提供了加速下载的链接)。假设所下载的模型名为 `zh_core_web_sm-2.x.x.tar.gz`。
+从 [releases](https://github.com/howl-anderson/Chinese_models_for_SpaCy/releases) 页面下载模型 (**New!** 为中国地区的用户提供了加速下载的链接)。假设所下载的模型名为 `zh_core_web_sm-2.x.x.tar.gz`。
 
 #### 安装模型
 
