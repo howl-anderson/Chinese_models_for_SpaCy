@@ -59,6 +59,12 @@ then, open web browser to `http://127.0.0.1:5000`, user will see image simllar t
 
 See [workflow](workflow.md)
 
+## Corpus Data
+The corpus data used in this project is OntoNotes 5.0。
+
+Since OntoNotes 5.0 is copyright material of LDC ([Linguistic Data Consortium](https://www.ldc.upenn.edu/)) . This project can not include the daa directly。Good news is OntoNotes 5.0 is free to organizer user, you can set up a count for your company or school, then you can get the OntoNotes 5.0 at no cost。
+
+
 ## TODO list
 
 * Attribute `pos_` is not working correctly. This related to Language class in SpaCy.

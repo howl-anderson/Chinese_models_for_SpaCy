@@ -58,6 +58,11 @@ python3 ./test.py
 
 见 [workflow](workflow.md)
 
+## 语料库
+本项目使用的语料库是 OntoNotes 5.0。
+
+由于 OntoNotes 5.0 是 LDC ([Linguistic Data Consortium](https://www.ldc.upenn.edu/)) 的版权材料，无法直接包含在本项目中。好消息是，OntoNotes 5.0 对于 团体用户（包含企业和学术组织）是完全免费的。用户可以建立一个企业或者学术组织账号，然后免费获取 OntoNotes 5.0。
+
 ## TODO list
 
 * 属性 `pos_` 不正确. 这个和 SpaCy 中中文语言 Class 相关。
