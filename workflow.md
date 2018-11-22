@@ -32,7 +32,7 @@
    * output: `WORDS_VECS.txt`
    * script: `compute_plain_word_vec.bash`
 
-## initial SpaCy model
+## initial SpaCy model [TODO: may be removed]
    * input: `./WORDS-c1000-p1.out/paths  WORDS_VECS.txt  WORDS_FREQ.txt`
    * output: `zh_wiki_core/**/*`
    * script: `create_init_model.bash`
