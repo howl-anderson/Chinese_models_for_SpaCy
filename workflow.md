@@ -101,3 +101,8 @@
    * input: `spacy_models/dependency_model`, `spacy_models/ner_model`
    * output: `spacy_models/final_model`
    * script: `merge_submodel.py`
+
+## create package 
+   * input: `spacy_models/final_model/`
+   * output: `spacy_package/`
+   * script: `./create_model_package.bash`
