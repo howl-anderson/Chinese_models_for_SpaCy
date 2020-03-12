@@ -1,6 +1,6 @@
 [submodule "spacy-dev-resources"]
 	path = spacy-dev-resources
-	url = git@github.com:howl-anderson/spacy-dev-resources.git
+	url = https://github.com/howl-anderson/spacy-dev-resources.git
 [submodule "third-part/brown-cluster"]
 	path = third-part/brown-cluster
-	url = https://github.com/percyliang/brown-cluster.git
+	url = https://github.com/howl-anderson/brown-cluster.git

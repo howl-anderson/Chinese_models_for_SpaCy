@@ -22,12 +22,12 @@ def get_root_filename(onto_dir):
 
 
 def split_sentence(text):
-    text = text.strip().split('\n')[1:-1]
+    text = text.strip().split("\n")[1:-1]
     return text
 
 
 def split_doc(text):
-    text_list = text.strip().split('</DOC>\s<DOC')
+    text_list = text.strip().split("</DOC>\s<DOC")
     ids = [re.findall('<DOC DOCNO="(.+?)">', t)[0] for t in text_list]
     text_list = [re.sub('<DOC DOCNO=".+?">', "", t).strip() for t in text_list]
     return ids, text_list
@@ -35,7 +35,7 @@ def split_doc(text):
 
 def clean_ent(ent):
     tag = re.findall('TYPE="(.+?)"', ent)[0]
-    text = re.findall('>(.+)', ent)[0]
+    text = re.findall(">(.+)", ent)[0]
     text = re.sub("\$", "\$", text)
     return (text, tag)
 
@@ -78,10 +78,11 @@ def onf_to_raw(onf_file):
     """
     with open(onf_file, "r") as f:
         onf = f.read()
-    sentences = re.findall("Plain sentence\:\n\-+?\n(.+?)Treebanked sentence",
-                           onf, re.DOTALL)
+    sentences = re.findall(
+        "Plain sentence\:\n\-+?\n(.+?)Treebanked sentence", onf, re.DOTALL
+    )
     sentences = [re.sub("\n+?\s*", " ", i).strip() for i in sentences]
-    paragraph = ' '.join(sentences)
+    paragraph = " ".join(sentences)
     return paragraph
 
 
@@ -98,16 +99,18 @@ def name_to_sentences(ner_filename):
     for sent in onto_sents:
         offsets = text_to_spacy(sent)
         doc = nlp(offsets[0])
-        tags = biluo_tags_from_offsets(doc, offsets[1]['entities'])
+        tags = biluo_tags_from_offsets(doc, offsets[1]["entities"])
         ner_info = list(zip(doc, tags))
         tokens = []
         for n, i in enumerate(ner_info):
-            token = {"head": 0,
-                     "dep": "",
-                     "tag": "",
-                     "orth": i[0].string,
-                     "ner": i[1],
-                     "id": n}
+            token = {
+                "head": 0,
+                "dep": "",
+                "tag": "",
+                "orth": i[0].string,
+                "ner": i[1],
+                "id": n,
+            }
             tokens.append(token)
         sentences.append({"tokens": tokens})
     return sentences
@@ -124,10 +127,7 @@ def dir_to_annotation(onto_dir):
         try:
             raw = onf_to_raw(onf_filename)
             sentences = name_to_sentences(ner_filename)
-            final = {"id": "fake",
-                     "paragraphs": [
-                         {"raw": raw,
-                          "sentences": sentences}]}
+            final = {"id": "fake", "paragraphs": [{"raw": raw, "sentences": sentences}]}
             all_annotations.append(final)
         except Exception as e:
             print("Error formatting ", fn, e)
@@ -138,7 +138,8 @@ def dir_to_annotation(onto_dir):
     onto_dir=("Directory of OntoNotes data to traverse", "option", "i", str),
     train_file=("File to write training spaCy JSON out to", "option", "t", str),
     val_file=("File to write validation spaCy JSON out to", "option", "e", str),
-    val_split=("Percentage to use for evaluation", "option", "v", float))
+    val_split=("Percentage to use for evaluation", "option", "v", float),
+)
 def main(onto_dir, train_file, val_file, val_split=0.75):
     print("Reading and formatting annotations")
     all_annotations = dir_to_annotation(onto_dir)
@@ -147,8 +148,11 @@ def main(onto_dir, train_file, val_file, val_split=0.75):
     val = all_annotations[:cutpoint]
     train = all_annotations[cutpoint:]
 
-    print("Saving {0} training examples and {1} validation examples".format(
-        len(train), len(val)))
+    print(
+        "Saving {0} training examples and {1} validation examples".format(
+            len(train), len(val)
+        )
+    )
     with open(train_file, "w") as f:
         json.dump(train, f, ensure_ascii=False, indent=4)
     with open(val_file, "w") as f:

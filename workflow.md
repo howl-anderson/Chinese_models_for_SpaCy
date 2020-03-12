@@ -2,6 +2,16 @@
 
 ## get preprocessed Chinese Wikipedia corpus
    see project [chinese-wikipedia-corpus-creator](https://github.com/howl-anderson/chinese-wikipedia-corpus-creator) for more details.
+   
+### produce wikipedia corpus ###
+   * input: -
+   * output: `token_cleaned_plain_files/`
+   * script: `create_wikipedia_corpus.bash`
+
+### copy corpus to workspace ###
+   * input: `chinese-wikipedia-corpus-creator/token_cleaned_plain_files/``
+   * output: `token_cleaned_plain_files/`
+   * script: `move_wikipedia_corpus.bash`
 
 ## computing word frequency
    * input: `token_cleaned_plain_files/*`
@@ -32,10 +42,18 @@
    * output: `WORDS_VECS.txt`
    * script: `compute_plain_word_vec.bash`
 
-## initial SpaCy model [TODO: may be removed]
+## initial SpaCy model
+
+### build base model
    * input: `./WORDS-c1000-p1.out/paths  WORDS_VECS.txt  WORDS_FREQ.txt`
-   * output: `zh_wiki_core/**/*`
+   * output: `spacy_models/base_model/**/*`
    * script: `create_init_model.bash`
+   
+### modify model name
+   * input: `spacy_models/base_model/meta.json`
+   * output: `spacy_models/base_model/meta.json`
+   * script: `update_model_meta.py`
+   
 
 ## getting UD_Chinese-GSD corpus
 
@@ -78,3 +96,8 @@
    * input: `zh_model china_ner_train.json china_ner_eval.json`
    * output: `ner_model`
    * script: `train_ner.bash`
+
+## merge sub-model
+   * input: `spacy_models/dependency_model`, `spacy_models/ner_model`
+   * output: `spacy_models/final_model`
+   * script: `merge_submodel.py`

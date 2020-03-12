@@ -9,10 +9,10 @@ output_file = sys.argv[2]
 output_path = pathlib.Path(output_file)
 
 
-with output_path.open('wt') as outfile:
+with output_path.open("wt") as outfile:
     for fname in input_files:
-        with fname.open('rt') as infile:
+        with fname.open("rt") as infile:
             for line in infile:
-                if not line.endswith('\n'):
-                    line = line + '\n'
+                if not line.endswith("\n"):
+                    line = line + "\n"
                 outfile.write(line)

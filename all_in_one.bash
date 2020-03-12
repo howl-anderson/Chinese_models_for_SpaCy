@@ -1,0 +1,17 @@
+./create_wikipedia_corpus.bash
+./move_wikipedia_corpus.bash
+./compute_words_freq.bash
+./merge_all_text_files.bash
+./download_and_compile_brown_cluster.bash
+./compute_plain_word_vec.bash
+./create_init_model.bash
+./update_model_meta.py
+./download_UD_Chinese-GSD_corpus.bash
+./extract_UD_Chinese-GSD_corpus.bash
+./convert_UD_Chinese-GSD_corpus.bash
+./format_convertor.bash
+./init_model.bash
+./train_model.bash
+./onto_to_spacy_json.bash
+./train_ner.bash
+./merge_submodel.py
