@@ -1,5 +1,6 @@
 [README written in English](README.en-US.md)
 ------------------------------
+# SpaCy 官方中文模型已经上线(https://spacy.io/models/zh), 本项目『推动 SpaCy 中文模型开发』的使命已经完成，本项目将进入维护状态，后续更新将只进行 bug 修复，感谢各位用户长期的关注和支持。
 
 # SpaCy 中文模型
 
