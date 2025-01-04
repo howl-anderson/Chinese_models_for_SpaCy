@@ -1,6 +1,8 @@
 [中文版本的 README](README.zh-Hans.md)
 ------------------------------
 
+# The official Chinese model for SpaCy is now available at (https://spacy.io/models/zh). It was developed with reference to this project and shares the same features. As the goal of this project — “promoting the development of the SpaCy Chinese model” — has been achieved, this repository will enter maintenance mode. Future updates will focus only on bug fixes. We would like to thank all users for their long-term attention and support.
+
 # Chinese models for SpaCy
 
 SpaCy (version > 2) models for Chinese language. Those models are rough and still **working in prograss**. But "Something is Better Than Nothing".
